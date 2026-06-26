@@ -144,7 +144,7 @@ Urutan ranking berdasarkan score tertinggi. Kalau ada score yang sama, pemain de
 
 ## Link Repository dan Video
 
-GitHub Repository: [(https://github.com/akbarafianth/5026251006_Akbar-Ariffianto_FP_A.git)]
+GitHub Repository: [https://github.com/akbarafianth/5026251006_Akbar-Ariffianto_FP_A.git]
 YouTube Demonstration Video: [https://youtu.be/hvE77dtlhWA]
 
 ## Catatan
