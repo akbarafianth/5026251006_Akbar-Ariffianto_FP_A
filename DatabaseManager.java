@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class DatabaseManager {
     private static final String URL = "jdbc:postgresql://localhost:5433/game_project";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "11Agustus";
+    private static final String PASSWORD = "postgrees";
 
     public static Connection getConnection() throws SQLException {
         try {
