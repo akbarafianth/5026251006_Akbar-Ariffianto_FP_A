@@ -60,61 +60,6 @@ Struktur tabel `players`:
 | draws    | Jumlah seri          |
 | score    | Total skor pemain    |
 
-## Cara Membuat Database
-
-Buka DBeaver, lalu buat database baru dengan nama:
-
-```sql
-CREATE DATABASE game_project;
-```
-
-Setelah database dibuat, hubungkan DBeaver ke database `game_project`, lalu jalankan file SQL yang ada di folder:
-
-```text
-database/schema.sql
-```
-
-Isi utama file `schema.sql` adalah membuat tabel `players` dan menambahkan beberapa data user awal untuk keperluan login.
-
-Contoh akun login yang bisa digunakan:
-
-```text
-Username: student1
-Password: 12345
-```
-
-## Konfigurasi Database di Java
-
-Koneksi database diatur pada file:
-
-```text
-src/DatabaseManager.java
-```
-
-Bagian yang perlu disesuaikan adalah URL, username, dan password PostgreSQL.
-
-Contoh konfigurasi:
-
-```java
-private static final String URL = "jdbc:postgresql://localhost:5432/game_project";
-private static final String USER = "postgres";
-private static final String PASSWORD = "postgres";
-```
-
-Password bisa diganti sesuai password PostgreSQL yang digunakan di komputer masing-masing.
-
-## Cara Menjalankan Program
-
-Langkah menjalankan program:
-
-1. Buat database `game_project` di PostgreSQL.
-2. Jalankan file `database/schema.sql` melalui DBeaver.
-3. Buka project Java di IDE, misalnya NetBeans, IntelliJ IDEA, atau VS Code.
-4. Pastikan JDBC Driver PostgreSQL sudah ditambahkan ke project.
-5. Cek konfigurasi database di `DatabaseManager.java`.
-6. Jalankan file `Main.java`.
-7. Login menggunakan akun yang tersedia di database.
-8. Setelah login berhasil, aplikasi akan masuk ke Main Menu.
 
 ## Alur Program
 
@@ -140,32 +85,6 @@ Jika user menang, kolom `wins` bertambah 1 dan `score` bertambah 10.
 Jika user kalah, kolom `losses` bertambah 1.
 Jika user seri, kolom `draws` bertambah 1 dan `score` bertambah 3.
 
-## Struktur Project
-
-Struktur folder project:
-
-```text
-student-swing-game-project/
-├── src/
-│   ├── Main.java
-│   ├── DatabaseManager.java
-│   ├── Player.java
-│   ├── PlayerService.java
-│   ├── GameLogic.java
-│   ├── LoginFrame.java
-│   ├── MainMenuFrame.java
-│   ├── GameFrame.java
-│   ├── StatisticsFrame.java
-│   └── TopScorersFrame.java
-├── database/
-│   └── schema.sql
-├── screenshots/
-│   ├── login-window.png
-│   ├── game-window.png
-│   ├── statistics-window.png
-│   └── top-scorers-window.png
-└── README.md
-```
 
 ## Penjelasan Class
 
@@ -222,23 +141,6 @@ LIMIT 5;
 
 Urutan ranking berdasarkan score tertinggi. Kalau ada score yang sama, pemain dengan jumlah wins lebih banyak akan berada di posisi lebih atas.
 
-## Screenshot Aplikasi
-
-### Login Window
-
-![Login Window](screenshots/login_windows.jpeg)
-
-### Game Window
-
-![Game Window](screenshots/game_windows.jpeg)
-
-### Statistics Window
-
-![Statistics Window](screenshots/statistics_windows.jpeg)
-
-### Top 5 Scorers Window
-
-![Top 5 Scorers Window](screenshots/top_scorers_windows.jpeg)
 
 ## Link Repository dan Video
 
