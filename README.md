@@ -226,23 +226,23 @@ Urutan ranking berdasarkan score tertinggi. Kalau ada score yang sama, pemain de
 
 ### Login Window
 
-![Login Window](screenshots/login-window.png)
+![Login Window](screenshots/login_windows.jpeg)
 
 ### Game Window
 
-![Game Window](screenshots/game-window.png)
+![Game Window](screenshots/game_windows.jpeg)
 
 ### Statistics Window
 
-![Statistics Window](screenshots/statistics-window.png)
+![Statistics Window](screenshots/statistics_windows.jpeg)
 
 ### Top 5 Scorers Window
 
-![Top 5 Scorers Window](screenshots/top-scorers-window.png)
+![Top 5 Scorers Window](screenshots/top_scorers_windows.jpeg)
 
 ## Link Repository dan Video
 
-GitHub Repository: [Isi link GitHub kamu di sini]
+GitHub Repository: [(https://github.com/akbarafianth/5026251006_Akbar-Ariffianto_FP_A.git)]
 YouTube Demonstration Video: [Isi link YouTube kamu di sini]
 
 ## Catatan
